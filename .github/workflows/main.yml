@@ -19,4 +19,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
       
       - run: docker build -t ghcr.io/goggaaa/popa:1337
+      - run: docker push ghcr.io/goggaaa/popa:1337
+      - run: docker run ghcr.io/goggaaa/popa:1337
+      
      
